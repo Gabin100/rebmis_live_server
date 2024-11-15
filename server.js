@@ -48,7 +48,7 @@ const server_port = process.env.SERVER_PORT || 6200;
 const http_server = http.createServer(app).listen(server_port, function () {
   logger.info(`SocketIO > listening on port ${server_port}`);
 });
-const allowedOrigins = [];
+const allowedOrigins = '*';
 function emitNewStudent(http_server) {
   const io = socket(http_server, {
     cors: {
