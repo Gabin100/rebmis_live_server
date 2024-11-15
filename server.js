@@ -57,6 +57,7 @@ app.get('/', (req, res) => {
 const allowedOrigins = '*';
 function emitNewStudent(http_server) {
   const io = socket(http_server, {
+    path: '/rebmis_live',
     cors: {
       origin: allowedOrigins, // Allow the client origin
       methods: ['GET', 'POST'], // Allow these HTTP methods
