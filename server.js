@@ -3,6 +3,7 @@ const express = require('express');
 const http = require('http');
 const winston = require('winston');
 const cors = require('cors');
+require('dotenv').config();
 
 // Determine the environment
 const isDevelopment = process.env.NODE_ENV === 'development';
@@ -43,9 +44,9 @@ if (isDevelopment) {
 const app = express();
 // Enable CORS for Express
 app.use(cors());
-
-const http_server = http.createServer(app).listen(4500, function () {
-  logger.info('SocketIO > listening on port 4500');
+const server_port = process.env.SERVER_PORT || 6200;
+const http_server = http.createServer(app).listen(server_port, function () {
+  logger.info(`SocketIO > listening on port ${server_port}`);
 });
 const allowedOrigins = process.env.ALLOWED_ORIGIN?.split(',') || [];
 function emitNewStudent(http_server) {

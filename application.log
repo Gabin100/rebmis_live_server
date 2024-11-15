@@ -1,0 +1,18 @@
+2024-11-15T08:44:33.708Z info: SocketIO > listening on port undefined
+2024-11-15T08:46:33.837Z info: SocketIO > listening on port 6000
+2024-11-15T08:47:20.691Z info: SocketIO > listening on port 6000
+2024-11-15T08:47:37.792Z info: SocketIO > listening on port 6200
+2024-11-15T08:47:42.176Z info: New client connected
+2024-11-15T08:47:42.178Z info: New client connected
+2024-11-15T08:47:42.237Z info: New client connected
+2024-11-15T08:47:42.240Z info: New client connected
+2024-11-15T08:50:44.498Z info: SocketIO > listening on port 6200
+2024-11-15T08:50:46.236Z info: New client connected
+2024-11-15T08:50:46.239Z info: New client connected
+2024-11-15T08:50:46.244Z info: New client connected
+2024-11-15T08:50:46.251Z info: New client connected
+2024-11-15T08:51:11.950Z info: New client connected
+2024-11-15T08:51:12.061Z info: Uploaded students received:  Student received successfully!
+2024-11-15T08:51:12.168Z info: Duplicate student: 
+2024-11-15T08:51:12.264Z info: Duplicate student: 
+2024-11-15T08:51:12.372Z info: Duplicate student: 
