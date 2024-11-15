@@ -48,6 +48,12 @@ const server_port = process.env.SERVER_PORT || 6200;
 const http_server = http.createServer(app).listen(server_port, function () {
   logger.info(`SocketIO > listening on port ${server_port}`);
 });
+// testing if app is working
+app.get('/', (req, res) => {
+  res.send('Hello, live server working perfectly!');
+});
+
+// live server
 const allowedOrigins = '*';
 function emitNewStudent(http_server) {
   const io = socket(http_server, {
