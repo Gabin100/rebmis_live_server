@@ -1,12 +1,13 @@
 {
   "name": "rebmis_live_server",
   "version": "1.0.0",
-  "description": "Reb Mis live srver",
-  "main": "index.js",
+  "description": "Reb Mis live server",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "author": "gabin",
+  "author": "Gabin 100",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
