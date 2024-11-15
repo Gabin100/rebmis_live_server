@@ -44,7 +44,7 @@ if (isDevelopment) {
 const app = express();
 // Enable CORS for Express
 app.use(cors());
-const server_port = process.env.SERVER_PORT || 6200;
+const server_port = process.env.SERVER_PORT;
 const http_server = http.createServer(app).listen(server_port, function () {
   logger.info(`SocketIO > listening on port ${server_port}`);
 });
