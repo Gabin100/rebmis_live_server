@@ -83,6 +83,11 @@ function emitNewStudent(http_server) {
       io.emit('duplicate_student', data);
       logger.info('Duplicate student: ', data);
     });
+
+    socket.on('finished_uploading_students', function (data) {
+      io.emit('finished_uploading_students', data);
+      logger.info('Finished uploading students: ', data);
+    });
   });
 }
 
