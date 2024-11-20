@@ -49,9 +49,9 @@ const http_server = http.createServer(app).listen(server_port, function () {
   logger.info(`SocketIO > listening on port ${server_port}`);
 });
 // testing if app is working
-app.get('/', (req, res) => {
-  res.send('Hello, live server working perfectly!');
-});
+// app.get('/', (req, res) => {
+//   res.send('Hello, live server working perfectly!');
+// });
 
 // live server
 const allowedOrigins = process.env.ALLOWED_ORIGIN?.split(',') || [];
