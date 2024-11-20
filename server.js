@@ -57,6 +57,7 @@ const http_server = http.createServer(app).listen(server_port, function () {
 const allowedOrigins = process.env.ALLOWED_ORIGIN?.split(',') || [];
 function emitNewStudent(http_server) {
   const io = socket(http_server, {
+    path: '/socket.io/',
     cors: {
       origin: '*', // Allow the client origin
       methods: ['GET', 'POST'], // Allow these HTTP methods
